@@ -5,6 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn {
+    @apply p-4 px-8 rounded-full shadow-lg  duration-200 hover:opacity-80;
+  }
+}
+
 body {
   background-image: url("../public/bg-header-mobile.png");
   background-repeat: no-repeat;
