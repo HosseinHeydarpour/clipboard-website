@@ -11,6 +11,10 @@
   }
 }
 
+.section-container {
+  @apply max-w-6xl mx-auto text-center;
+}
+
 body {
   background-image: url("../public/bg-header-mobile.png");
   background-repeat: no-repeat;
