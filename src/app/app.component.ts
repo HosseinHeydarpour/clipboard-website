@@ -6,6 +6,7 @@ import { AnywhereClipboardAccessComponent } from './features/anywhere-clipboard-
 import { SuperchargeComponent } from './features/supercharge/supercharge.component';
 import { ReferencesComponent } from './features/references/references.component';
 import { CTAComponent } from './shared/cta/cta.component';
+import { FooterComponent } from './features/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { CTAComponent } from './shared/cta/cta.component';
     SuperchargeComponent,
     ReferencesComponent,
     CTAComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
