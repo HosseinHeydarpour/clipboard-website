@@ -4,6 +4,7 @@ import { SnippetsComponent } from './features/snippets/snippets.component';
 import { FeaturesComponent } from './features/features/features.component';
 import { AnywhereClipboardAccessComponent } from './features/anywhere-clipboard-access/anywhere-clipboard-access.component';
 import { SuperchargeComponent } from './features/supercharge/supercharge.component';
+import { ReferencesComponent } from './features/references/references.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { SuperchargeComponent } from './features/supercharge/supercharge.compone
     FeaturesComponent,
     AnywhereClipboardAccessComponent,
     SuperchargeComponent,
+    ReferencesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
