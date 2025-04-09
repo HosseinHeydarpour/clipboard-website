@@ -15,7 +15,6 @@ This is a solution to the [Conference ticket generator challenge on Frontend Men
   - [Continued development](#continued-development)
 
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
