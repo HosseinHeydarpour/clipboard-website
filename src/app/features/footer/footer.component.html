@@ -7,58 +7,25 @@
         class="flex flex-col justify-between flex-1 mb-10 space-y-6 md:flex-row md:space-y-0 md:mb-0 text-grayishBlue"
       >
         <!-- Menus -->
+        @for (menu of menus; track menus.length) {
         <div
           class="flex flex-col space-y-4 md:flex-row md:ml-24 space-x-24 md:space-y-0"
         >
-          <!-- Menu 1 -->
           <div class="flex flex-col space-y-4 text-center md:text-left">
-            <div>
-              <a href="" class="hover:text-strongCyan">FAQs</a>
-            </div>
-            <div>
-              <a href="" class="hover:text-strongCyan">Contact Us</a>
+            <div *ngFor="let item of menu.items">
+              <a href="" class="hover:text-strongCyan">{{ item.label }}</a>
             </div>
           </div>
         </div>
-
-        <div
-          class="flex flex-col space-y-4 md:flex-row md:ml-24 space-x-24 md:space-y-0"
-        >
-          <!-- Menu 2 -->
-          <div class="flex flex-col space-y-4 text-center md:text-left">
-            <div>
-              <a href="" class="hover:text-strongCyan">Privacy Policy</a>
-            </div>
-            <div>
-              <a href="" class="hover:text-strongCyan">Press Kit</a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col space-y-4 md:flex-row md:ml-24 space-x-24 md:space-y-0"
-        >
-          <!-- Menu 3 -->
-          <div class="flex flex-col space-y-4 text-center md:text-left">
-            <div>
-              <a href="" class="hover:text-strongCyan">Install Guide</a>
-            </div>
-          </div>
-        </div>
+        }
 
         <!-- Social Icons -->
         <div class="flex justify-between w-32 py-1">
+          @for (logo of socialLogos; track socialLogos.length) {
           <a href="#">
-            <img src="icon-facebook.svg" alt="" class="ficon duration-200" />
+            <img [src]="logo.src" [alt]="logo.alt" class="ficon duration-200" />
           </a>
-
-          <a href="#">
-            <img src="icon-instagram.svg" alt="" class="ficon duration-200" />
-          </a>
-
-          <a href="#">
-            <img src="icon-twitter.svg" alt="" class="ficon duration-200" />
-          </a>
+          }
         </div>
       </div>
     </div>
